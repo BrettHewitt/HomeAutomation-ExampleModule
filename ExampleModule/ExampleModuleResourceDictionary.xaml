@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DataTemplate x:Key="ExampleDataTemplate">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Setting 1" Margin="5,0"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=Setting1, Mode=TwoWay}" Margin="5"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Content="Setting 2" Margin="5,0"/>
+            <CheckBox Grid.Row="1" Grid.Column="1" IsChecked="{Binding Path=Setting2, Mode=TwoWay}" Content="I'm a checkbox" Margin="5"/>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+                <Button Content="Save" Command="{Binding Path=SaveCommand}"/>
+            </StackPanel>
+        </Grid>
+    </DataTemplate>
+</ResourceDictionary>

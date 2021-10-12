@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+	<EnableDynamicLoading>true</EnableDynamicLoading>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="DataDyneIntentLibrary">
+      <HintPath>Dlls\DataDyneIntentLibrary.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="ModuleBase">
+      <HintPath>Dlls\ModuleBase.dll</HintPath>
+	  <Private>false</Private>
+	  <ExcludeAssets>runtime</ExcludeAssets>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="License.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="module.ddm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
