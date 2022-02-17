@@ -9,6 +9,7 @@
   <ItemGroup>
 	<PackageReference Include="DataDyne.IntentLibrary" Version="1.0.31">
 	  <Private>false</Private>
+	  <ExcludeAssets>runtime</ExcludeAssets>
 	</PackageReference>
 	<PackageReference Include="DataDyne.ModuleBase" Version="1.0.10">
 	  <Private>false</Private>
