@@ -7,15 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="DataDyneIntentLibrary">
-      <HintPath>Dlls\DataDyneIntentLibrary.dll</HintPath>
+	<PackageReference Include="DataDyne.IntentLibrary" Version="1.0.31">
 	  <Private>false</Private>
-    </Reference>
-    <Reference Include="ModuleBase">
-      <HintPath>Dlls\ModuleBase.dll</HintPath>
+	</PackageReference>
+	<PackageReference Include="DataDyne.ModuleBase" Version="1.0.10">
 	  <Private>false</Private>
 	  <ExcludeAssets>runtime</ExcludeAssets>
-    </Reference>
+	</PackageReference>
   </ItemGroup>
 
   <ItemGroup>
